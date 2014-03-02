@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved
-filetype off                  " required!
+filetype on
 
 
 filetype on
@@ -31,11 +31,17 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'bling/vim-airline'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Raimondi/delimitMate'
 
 " mappings
 imap jk <Esc>
+map <C-n> :NERDTreeToggle<CR>
+map <-> :bprevious<CR>
+map <=> :bnext<CR>
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 set t_Co=256
 colorscheme wombat256
