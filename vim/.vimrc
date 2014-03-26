@@ -4,6 +4,7 @@ filetype on
 
 filetype on
 syntax enable
+filetype indent on
 
 " tabs stuff
 set shiftwidth=4
@@ -11,7 +12,6 @@ set tabstop=4
 set softtabstop=4
 set smarttab
 set autoindent
-set smartindent
 set expandtab
 
 set cursorline
@@ -34,13 +34,15 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Raimondi/delimitMate'
+Bundle 'techlivezheng/vim-plugin-minibufexpl'
 
 " mappings
 imap jk <Esc>
 map <C-n> :NERDTreeToggle<CR>
-map <-> :bprevious<CR>
-map <=> :bnext<CR>
-
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 set t_Co=256
