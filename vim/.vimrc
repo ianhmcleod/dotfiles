@@ -1,6 +1,5 @@
 set nocompatible              " be iMproved
-filetype on
-
+filetype plugin on
 
 filetype on
 syntax enable
@@ -36,8 +35,9 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'chrisgillis/vim-bootstrap3-snippets'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle "tomtom/tlib_vim"
+Bundle 'vim-scripts/vimwiki'
 
-colorscheme wombat256
+colorscheme tomorrownight
 
 " mappings
 imap jk <Esc>
